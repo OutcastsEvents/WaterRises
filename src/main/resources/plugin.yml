@@ -17,13 +17,13 @@ commands:
   waterrise:
     description: Raises the water level
     usage: /<command> <amount>
-    permission: lavarises.waterrise
+    permission: waterrises.waterrise
     aliases:
       - raisewater
   waterinit:
     description: Initializes the water level
     usage: /<command> <length> <width> [originx] [originz]
-    permission: lavarises.waterinit
+    permission: waterrises.waterinit
     aliases:
       - initwater
 depend:
