@@ -1,0 +1,30 @@
+name: WaterRises
+version: '1.0.0'
+main: dev.acronical.waterrises.WaterRises
+api-version: '1.20'
+author: Acronical
+website: https://acronical.pages.dev
+description: A customisable plugin that raises the water level based on an area you define and the amount you specify.
+default-permission: op
+permissions:
+  waterrises.waterrise:
+    description: Allows the player to raise the water level
+    default: op
+  waterrises.waterinit:
+    description: Allows the player to initialize the water level
+    default: op
+commands:
+  waterrise:
+    description: Raises the water level
+    usage: /<command> <amount>
+    permission: lavarises.waterrise
+    aliases:
+      - raisewater
+  waterinit:
+    description: Initializes the water level
+    usage: /<command> <length> <width> [originx] [originz]
+    permission: lavarises.waterinit
+    aliases:
+      - initwater
+depend:
+  - FastAsyncWorldEdit
